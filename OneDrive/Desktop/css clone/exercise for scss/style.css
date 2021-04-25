@@ -1,0 +1,172 @@
+$color-primary: #f53803b3;
+$color-secondary:#f5d02099;
+$color-tertiory:#7d9bb8cc;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+header {
+  position: relative;
+
+  height: 90vh;
+  background-image: linear-gradient(315deg,
+      rgba(105, 52, 37, 0.7) 10%,
+      rgb(245, 208, 32, 0.6) 46%,
+      rgb(125, 155, 184, 0.8) 100%),
+    url(assets/resturant-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 90%);
+}
+
+.logo-box {
+  position: absolute;
+
+}
+
+.logo {
+  background-color: white;
+  height: 7.5rem;
+
+}
+
+.Health-span {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.header-primary-span{
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: center;
+  
+}
+
+.text-box-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 35rem;
+  padding: 1rem;
+}
+.heading-primary {
+  background: rgba( 255, 255, 255, 0.60 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur(2.0px );
+-webkit-backdrop-filter: blur( 2.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 3rem .6rem;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  position: relative;
+  text-transform: uppercase;
+}
+.header-primary-main {
+  animation: moveInLeft 1s ease-out;
+  letter-spacing: 4vw;
+  font-size: 1.6rem;
+}
+.header-primary-secondary {
+  animation: moveInRight 1.2s ease-out;  
+  font-size: .8rem;
+  margin-top: 2rem;
+  letter-spacing: .5rem;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate(10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100%);
+  }
+
+  50% {
+    opacity: 0;
+    transform: translate(-10%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  padding: 1rem 3rem;
+  border-radius: 10rem;
+  justify-content: center;
+  position: absolute;
+  font-size: 1rem;
+}
+
+.btn-white {  
+  margin: .1rem;
+  padding: 1.5rem 4.5rem;
+  text-align: center;
+  text-transform: uppercase;  
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 2rem #eee;
+  border-radius: 1rem;
+  display: block;
+  background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA  51%, #1FA2FF  100%)
+}
+
+.btn:hover {
+  transform: translateY(-.1rem);
+  box-shadow: 0 10px 20px rgb(0, 0, 0, .5);
+  background-position: right center;
+  /* change the direction of the change here */
+  color: black;
+  text-decoration: none;
+}
+
+.btn:active {
+  box-shadow: 0 .5rem 2rem rgb(0, 0, 0, .5);
+  transform: translateY(+.2rem);
+}
+
+.button-order-container {
+  display: flex;
+  width: 100%;
+  justify-content: center; 
+}
