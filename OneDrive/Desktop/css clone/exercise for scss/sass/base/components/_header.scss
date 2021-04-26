@@ -1,0 +1,31 @@
+.header {
+    position: relative;
+
+    height: 90vh;
+    background-image: linear-gradient(315deg,
+            rgba($color-background, 0.7) 10%,
+            rgba($color-background-2, 0.6) 46%,
+            rgba($color-background-3, 0.8) 100%),
+        url(../assets//resturant-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0 90%);
+
+    &__logo-box {
+        position: absolute;
+    }
+
+    &__logo {
+        background-color: white;
+        height: 7.5rem;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 35rem;
+        padding: 1rem;
+    }
+}
