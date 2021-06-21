@@ -1,0 +1,29 @@
+// color variable
+$color_primary:lighten(#490B3D, 30%);
+$color_primary_dark:#490B3D;
+
+$color_secondary:#BD1E51;
+$color_secondary_dark:darken(#BD1E51,20%);
+
+$color_tertiory:#F1B814;
+$color_tertiory_dark:darken(#F1B814,20%);
+
+// font
+
+$font_primary_vazir:"Vazir";
+$font_english:'Benne', serif;
+
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;//10px/16px=62.5% 1rem=>10px
+    box-sizing: border-box; 
+}
+body{
+    font-family: $font_primary_vazir;
+    font-weight: 300;
+}

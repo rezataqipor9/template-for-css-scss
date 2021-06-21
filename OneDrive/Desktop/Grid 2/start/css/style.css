@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+
+}
+
+body {
+    font-family: 'Potta One', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #777;
+    font-size: .625rem;
+    line-height: 1.6;
+    padding: 30px;
+
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to left bottom, rgba(179, 255, 171, 0.8), rgba(21, 214, 140, 0.733)), url(../img1/hero.jpg);
+    background-position: center;
+    /* background-size: cover; */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    position: relative;
+    
+}
+
+.logo_box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+}
+
+.logo {
+    height: 6vh;
+
+}
+.logo:hover{
+    animation:moveToRight 1s ease-out ;
+}
+
+.text_box {
+    position: relative;
+    top: 25%;
+    text-align: center;    
+    color: #ffffff;  
+    
+}
+
+.text_primary {
+ text-transform: uppercase;
+ font-size: 6rem;
+ font-weight: 600;
+ letter-spacing: 2rem;
+ display: block;
+ animation-name: moveToRight;
+ animation-duration: 1s;
+ animation-timing-function: ease-out;
+ backface-visibility: hidden;
+ 
+}
+
+.text_secondary {
+    backface-visibility: hidden;
+    font-size: 2.4rem;
+    color: #777;
+    letter-spacing: 1rem;
+    display: block;
+    animation: moveToLeft 1s;
+}
+@keyframes moveToRight{
+    0% {
+        opacity: 0;
+        transform: translateX(10rem)
+    }
+    80% {
+        transform: translateX(-1rem)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes moveToLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem)
+    }
+    80% {
+        transform: translateX(+1rem)
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+@keyframes button{
+    0%{
+        opacity: 0;
+        transform: translateX(+10rem)
+    }
+    80%{
+        opacity: 1;
+        transform: translateX(-1rem);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+.buttonreza{
+    animation:button 1s ease-in
+}

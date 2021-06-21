@@ -1,0 +1,17 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+@pimary_color=#736408;
+.navigation{
+    list-style: none;
+    background-color: pimary_color;
+    display: inline-block;
+    li{
+        padding: 20px;
+    }
+    li:last-child{
+       justify-content: flex-end;
+      background-color: darken($pimary_color,50%);
+    }
+}
